@@ -1,6 +1,6 @@
 import React from "react";
-import { WelcomeNav } from "../components/WelcomeNav";
-import { WelcomeContent } from "../components/WelcomeContent";
+import WelcomeNav from "../components/WelcomeNav";
+import WelcomeContent from "../components/WelcomeContent";
 
 export const Welcome = () => {
   return (
@@ -8,4 +8,7 @@ export const Welcome = () => {
       <WelcomeNav />
       <WelcomeContent />
     </div>
-  )};
+  );
+};
+
+export default Welcome;
