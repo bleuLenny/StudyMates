@@ -1,12 +1,10 @@
-import './App.css';
-import { Routes } from "./Routes";
-
-function App() {
+import Routing from "./Routing";
+const App = () => {
   return (
-    <div className="App">
-      <Routes />
+    <div>
+      <Routing />
     </div>
   );
-}
+};
 
 export default App;
