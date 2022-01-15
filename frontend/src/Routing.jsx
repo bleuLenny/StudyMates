@@ -1,17 +1,17 @@
-import React from "react";
-import { Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Welcome from "./pages/WelcomePage";
-
-export const Routing = () => {
+function Routing() {
   return (
-    <Router>
-      <div className="container">
-        <Routes>
-          <Route path="/about" element={<Welcome />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="routing">
+      <Router>
+        <div className="container">
+          <Routes>
+            <Route path='/' element={<Welcome />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
-};
+}
 
 export default Routing;

@@ -1,18 +1,10 @@
-import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Welcome from "./pages/WelcomePage";
-function App() {
+import Routing from "./Routing";
+const App = () => {
   return (
-    <div className="App">
-      <Router>
-        <div className="container">
-          <Routes>
-            <Route path='/' element={<Welcome />} />
-          </Routes>
-        </div>
-      </Router>
+    <div>
+      <Routing />
     </div>
   );
-}
+};
 
 export default App;
