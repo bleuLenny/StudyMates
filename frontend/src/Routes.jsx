@@ -1,16 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { Welcome } from "./pages/WelcomePage";
+import { Router, Route } from "react-router-dom";
+import  Welcome  from "./pages/WelcomePage";
 
 export const Routes = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Route>
         <Route exact path="/" component={Welcome} />
 
         {/* <Route exact path="/welcome" component={Welcome} /> */}
-
       </Route>
-    </BrowserRouter>
+    </Router>
   );
 };

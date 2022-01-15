@@ -8,4 +8,7 @@ export const Welcome = () => {
       <WelcomeNav />
       <WelcomeContent />
     </div>
-  )};
+  );
+};
+
+export default Welcome;
