@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Navbar } from 'react-bootstrap'
 
 const Header = ({ title }) => {
     return (
-        <header>
-            <h1 style={headingStyle}>{title}</h1>
-        </header>
+        <Navbar bg="light">
+            <Navbar.Brand>
+            <h1>{title}</h1>
+            </Navbar.Brand>
+        </Navbar>
     )
 }
 
