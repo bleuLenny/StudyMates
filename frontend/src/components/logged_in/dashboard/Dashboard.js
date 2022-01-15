@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
 
-const Dashboard = () => {
+const Dashboard = ({ username }) => {
   return (
     <div>
-      <Header />
+      <Header username={username} />
     </div>
   );
 };
