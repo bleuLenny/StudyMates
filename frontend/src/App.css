@@ -44,3 +44,12 @@
     transform: rotate(360deg);
   }
 }
+
+.wel-content {
+  margin-top: 100px;
+}
+
+.wel-banner {
+  text-align: center;
+  padding: 100px;
+}

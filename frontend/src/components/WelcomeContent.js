@@ -1,10 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../App.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 
-function App() {
+const WelcomeContent = () => {
   return (
-    <div>
-      <Container>
+    <div className="wel-content">
+      <Container className="wel-banner">
+        <h1>StudyMate</h1>
+        <h5>Stop struggling, start studying</h5>
+      </Container>
+
+      <Container className="sign-up">
         <Form>
           <Row>
             <Col>
@@ -31,6 +37,6 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
-export default App;
+export default WelcomeContent;

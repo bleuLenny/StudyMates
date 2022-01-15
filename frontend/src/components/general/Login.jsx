@@ -14,7 +14,7 @@ const Test = () => {
               type="email"
               name="email"
               className="form-control"
-              // id="exampleInputEmail1"
+              id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
