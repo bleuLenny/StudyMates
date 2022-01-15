@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer"
 import './Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Breadcrumb, Card } from "react-bootstrap";
@@ -32,6 +33,7 @@ const Dashboard = ({ username }) => {
           </Card>
         </Card.Body>
       </Card>
+      <Footer />
     </div>
   );
 };
