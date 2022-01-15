@@ -8,7 +8,7 @@ export const Routes = () => {
       <Route>
         <Route exact path="/" component={Welcome} />
 
-        <Route exact path="/welcome" component={Welcome} />
+        {/* <Route exact path="/welcome" component={Welcome} /> */}
 
       </Route>
     </BrowserRouter>

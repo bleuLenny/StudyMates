@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Button, Navbar, Nav } from 'react-bootstrap'
 
