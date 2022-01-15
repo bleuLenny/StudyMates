@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './Dashboard.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Breadcrumb, Card } from "react-bootstrap";
 
 const Dashboard = ({ username }) => {
   return (
     <div>
       <Header username={username} />
-      <Card className="Dashboard-Welcome">
+      <Card className='mt-5 p-3' style={welcomeStyle}>
         <Card.Body>
           <Card.Title>
             Welcome {username}!
@@ -36,4 +36,8 @@ const Dashboard = ({ username }) => {
   );
 };
 
+const welcomeStyle = {
+      color: 'white',
+      backgroundColor: 'navy',
+  }
 export default Dashboard;
