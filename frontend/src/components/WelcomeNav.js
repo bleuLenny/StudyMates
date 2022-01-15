@@ -1,23 +1,40 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Button, Navbar, Nav } from 'react-bootstrap'
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <Container class="justify-content-around">
-          <Navbar expand="lg" variant="light" bg="light" fixed="top">
-            <Container>
-              <Navbar.Brand href="#">StudyMate</Navbar.Brand>
-              <Nav.Link href="#about">About Us</Nav.Link>
-              <Nav.Link href="#support">Support Us</Nav.Link>
-              <Button>Log In</Button>
-            </Container>
-          </Navbar>
-        </Container>
-      </header>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">
+          StudyMate
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <Link className="nav-item nav-link" to="/">
+              Home
+            </Link>
+            <Link className="nav-item nav-link" to="/about">
+              About Us
+            </Link>
+            <Link className="nav-item nav-link" to="/login">
+              Login
+            </Link>
+          </div>
+        </div>
+      </nav>
     </div>
   );
-}
+};
 
 export default App;
