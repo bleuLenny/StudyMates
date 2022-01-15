@@ -8,19 +8,21 @@ const passport = require("./middleware/passport");
 
 app.use(express.urlencoded({ extended: false }));
 
-
 app.use(
-    session({
-      secret: "secret",
-      resave: false,
-      saveUninitialized: false,
-      cookie: {
-        httpOnly: true,
-        secure: false,
-        maxAge: 600000,
-      },
-    })
-  );
+  session({
+    secret: "secret",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: false,
+      maxAge: 600000,
+    },
+  })
+);
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.get("/", (req, res) => res.send("Hello world"));
 
