@@ -19,6 +19,7 @@ const Read = () => {
         <Card.Body>
           <Card.Title>View GroupName Group</Card.Title>
           <h1>GroupName</h1>
+          <h3>Create by: Username</h3>
           <h3>Course: Insert Course Here</h3>
           <h3>Day: Mondays</h3>
           <h3>Time: 4:00 PM</h3>
