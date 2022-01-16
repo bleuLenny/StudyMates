@@ -15,7 +15,7 @@ const Read = () => {
   return (
     <div>
       <Header />
-      <Card className="creategrid">
+      <Card className="mb-3">
         <Card.Body>
           <Card.Title>View GroupName Group</Card.Title>
           <h1>GroupName</h1>
