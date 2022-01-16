@@ -1,0 +1,24 @@
+:root {
+    --prussian: #00243D;
+    --richblack: #00171F;
+    --cultured: #F5F5F5;
+    --pewter: #89B1BD;
+    --crayola: #FFD485;
+}
+
+.login-content {
+    margin-top: 72px;
+    background-color: var(--pewter);
+    overflow: hidden;
+    padding-top: 2em;
+    padding-bottom: 6em;
+    color: var(--prussian);
+}
+
+.title {
+    padding: 1em;
+}
+
+.login-form {
+    line-height: 2.5em;
+}
