@@ -1,0 +1,27 @@
+.background-property img{
+    width: 1300px;
+    height: 500px;
+    opacity: 0.5;
+}
+
+.background-property{
+    position: relative;
+    text-align: center;
+}
+
+.center-info{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border: 3px solid black;
+}
+
+.sub-heading{
+    text-align: center;
+    padding: 20px;
+}
