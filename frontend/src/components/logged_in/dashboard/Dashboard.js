@@ -5,7 +5,7 @@ import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, CardGroup } from "react-bootstrap";
 
-const Dashboard = () => {
+const Dashboard = (username) => {
   return (
     <div>
       <Header username={username} />
