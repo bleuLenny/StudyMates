@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card } from "react-bootstrap";
+import { Card, CardGroup } from "react-bootstrap";
 
 const Dashboard = ({ username }) => {
   return (
@@ -12,17 +12,19 @@ const Dashboard = ({ username }) => {
       <Card className="mt-5 p-3" style={welcomeStyle}>
         <Card.Body>
           <Card.Title>Welcome {username}!</Card.Title>
-          <Card>
-            <Card.Body>
-              <Card.Title>{username}'s Stats</Card.Title>
-              <Card.Text>some stats here</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Card.Title>Upcoming Study Sessions</Card.Title>
-            </Card.Body>
-          </Card>
+          <CardGroup>
+            <Card style={statsStyle}>
+              <Card.Body>
+                <Card.Title>{username}'s Stats</Card.Title>
+                <Card.Text>some stats here</Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={statsStyle}>
+              <Card.Body>
+                <Card.Title>Upcoming Study Sessions</Card.Title>
+              </Card.Body>
+            </Card>
+          </CardGroup>
         </Card.Body>
       </Card>
       <Footer />
@@ -36,6 +38,11 @@ Dashboard.defaultProps = {
 };
 const welcomeStyle = {
   color: "white",
-  backgroundColor: "navy",
+  backgroundColor: "0, 36, 61",
 };
+const statsStyle = {
+  color: "black",
+  backgroundColor: "245, 245, 245",
+};
+
 export default Dashboard;
