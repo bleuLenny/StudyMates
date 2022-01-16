@@ -20,8 +20,8 @@ let authController = {
   }),
 
   logout: (req, res) => {
+    res.redirect("/");
     req.logout();
-    res.redirect("/auth/login");
   },
 };
 
