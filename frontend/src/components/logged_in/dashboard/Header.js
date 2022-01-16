@@ -17,7 +17,7 @@ const Header = ({ title, username }) => {
         </Navbar.Brand>
         <Nav>
           <NavDropdown title="Study Groups">
-            <NavDropdown.Item href="search">Search Groups</NavDropdown.Item>
+            <NavDropdown.Item href="/search">Search Groups</NavDropdown.Item>
             <NavDropdown.Item href="mygroups">
               View {username} Groups
             </NavDropdown.Item>
