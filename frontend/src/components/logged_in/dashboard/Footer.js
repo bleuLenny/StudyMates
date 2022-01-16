@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Footer } from 'react-bootstrap'
+// import { Footer } from 'react-bootstrap'
 
 const Footer = () => {
     return (
