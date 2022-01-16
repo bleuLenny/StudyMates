@@ -8,6 +8,9 @@ import PersonalGroups from "./pages/dashboard/PersonalGroups";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Search from "./pages/dashboard/Search";
 import Carousel from "./components/Carousel/Carousel";
+import CreatePage from "./pages/CRUD/CreatePage";
+import UpdatePage from "./pages/CRUD/UpdatePage";
+import ReadPage from "./pages/CRUD/ReadPage";
 
 const Routing = () => {
   return (
@@ -24,6 +27,9 @@ const Routing = () => {
             <Route path="/mygroups" element={<PersonalGroups />} />
             <Route path="/search" element={<Search />} />
             <Route path="/carousel" element={<Carousel />} />
+            <Route path="/create" element={<CreatePage/>}/>
+            <Route path="/update" element={<UpdatePage/>}/>
+            <Route path="/read" element={<ReadPage/>}/>
 
           </Routes>
         </div>
