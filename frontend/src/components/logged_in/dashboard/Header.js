@@ -5,6 +5,11 @@ import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 const Header = ({ title, username }) => {
+  
+  const logOutButton = () => {
+    axios.get("/auth/logout");
+    <Navigate to="/" />;
+  };
     return (
         <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
             <Container>
@@ -18,7 +23,7 @@ const Header = ({ title, username }) => {
                     <NavDropdown.Item href='create'>Create Group</NavDropdown.Item>
                 </NavDropdown>
                 
-                <Nav.Link href='logout'>Logout</Nav.Link>
+                <Nav.Link onClick={logOutButton}>Logout</Nav.Link>
                 
             </Nav>
             </Container>
@@ -26,31 +31,28 @@ const Header = ({ title, username }) => {
     )
 }
 
-  const logOutButton = () => {
-    axios.get("/auth/logout");
-    <Navigate to="/" />;
-  };
-  return (
-    <Navbar expand="lg" variant="light" bg="info" sticky="top">
-      <Container>
-        <Navbar.Brand href="#">
-          <h1> {title}</h1>
-        </Navbar.Brand>
-        <Nav>
-          <NavDropdown title="Study Groups">
-            <NavDropdown.Item href="search">Search Groups</NavDropdown.Item>
-            <NavDropdown.Item href="mygroups">
-              View {username} Groups
-            </NavDropdown.Item>
-            <NavDropdown.Item href="create">Create Group</NavDropdown.Item>
-          </NavDropdown>
+  
+//   return (
+//     <Navbar expand="lg" variant="light" bg="info" sticky="top">
+//       <Container>
+//         <Navbar.Brand href="#">
+//           <h1> {title}</h1>
+//         </Navbar.Brand>
+//         <Nav>
+//           <NavDropdown title="Study Groups">
+//             <NavDropdown.Item href="search">Search Groups</NavDropdown.Item>
+//             <NavDropdown.Item href="mygroups">
+//               View {username} Groups
+//             </NavDropdown.Item>
+//             <NavDropdown.Item href="create">Create Group</NavDropdown.Item>
+//           </NavDropdown>
 
-          <Nav.Link onClick={logOutButton}>Logout</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
-  );
-};
+//           <Nav.Link onClick={logOutButton}>Logout</Nav.Link>
+//         </Nav>
+//       </Container>
+//     </Navbar>
+//   );
+// };
 
 Header.defaultProps = {
   title: "StudyMates",

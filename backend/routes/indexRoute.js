@@ -11,6 +11,8 @@ router.post("/register", authController.registerSubmit);
 
 router.post("/login", authController.loginSubmit);
 
+router.get("/api/auth", apiController.auth);
+
 router.get("/api/list", apiController.list);
 
 router.get("/logout", authController.logout);

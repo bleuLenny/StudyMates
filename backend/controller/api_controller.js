@@ -36,6 +36,10 @@ let apiController = {
       // if(!doc)console.log(doc)
     });
   },
+  auth:(req,res)=>{
+    console.log(req.session)
+    res.send([req.session,req.user])
+  },
   filter: (req, res) => {
     Courses.find({ course_id: req.body.course_id }, async (err, doc) => {
       if (err) throw err;
