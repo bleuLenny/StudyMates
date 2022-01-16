@@ -36,10 +36,6 @@ export default function AboutusPage() {
                   <Card.Text>
                     I am a Co-op student completing my Computer Information
                     Technology diploma at BCIT with a passion for cybersecurity.
-                    I have experience maintaining a virtual network using Linux,
-                    writing shell scripts to manage routers and file systems. I
-                    can facilitate teams and meetings, have worked in customer
-                    service as both a Spa Coordinator and an Assistant Manager.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -73,7 +69,7 @@ export default function AboutusPage() {
                 />
                 <Card.Body>
                   <Card.Title>Alex Amog</Card.Title>
-                  <Card.Text>I am cool!</Card.Text>
+                  <Card.Text>I am a third term co-op student in Computer Information Technology.</Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">BCIT Student</small>
