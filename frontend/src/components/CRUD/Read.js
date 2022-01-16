@@ -18,6 +18,7 @@ const Read = () => {
       <Card className="mb-3">
         <Card.Body>
           <Card.Title>View GroupName Group</Card.Title>
+          <Card.Text>
           <h1>GroupName</h1>
           <h3>Create by: Username</h3>
           <h3>Course: Insert Course Here</h3>
@@ -25,6 +26,9 @@ const Read = () => {
           <h3>Time: 4:00 PM</h3>
           <h3>Course Info:</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis pellentesque odio. Fusce mattis sapien nec neque facilisis sagittis. Duis ultrices neque eu augue facilisis, nec elementum nibh placerat. Fusce et vulputate urna, non dignissim turpis. Cras eget nunc eros. In placerat neque quis rhoncus lobortis. Integer bibendum neque mi, pellentesque venenatis dui fermentum vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vehicula gravida nunc eget volutpat. </p>
+          </Card.Text>
+          <Button variant="secondary">Edit Group</Button>{' '}
+          <Button variant="danger">Delete Group</Button>
         </Card.Body>
       </Card>
       <Footer />
