@@ -9,14 +9,14 @@ import { Navigate } from "react-router-dom";
 import axios from "axios";
 
 const Dashboard = ({ username }) => {
-  useEffect(() => {
-    axios.get("/api/").then((val) => {
-      console.log(val.data.passport)
-      if (val.data.passport === undefined) {
-        return <Navigate to="/login" replace={true} />;
-      }
-    });
-  });
+  // useEffect(() => {
+  //   axios.get("/api/").then((val) => {
+  //     console.log(val.data.passport);
+  //     if (val.data.passport === undefined) {
+  //       <Navigate to="/localhost:3000" replace={true} />;
+  //     }
+  //   });
+  // });
 
   return (
     <div>
