@@ -36,10 +36,10 @@ const Test = () => {
           </button>
         </form>
         <p className="mt-4">
-          New User? <Link to="/auth/register">Register</Link>
+          New User? <Link to="/register">Register</Link>
         </p>
         <p>
-          Forgot Password? <Link to="/auth/forgot">Reset</Link>
+          Forgot Password? <Link to="/forgot">Reset</Link>
         </p>
       </div>
     </div>
