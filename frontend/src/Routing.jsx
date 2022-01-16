@@ -12,7 +12,7 @@ function Routing() {
             <Route path="/" element={<WelcomePage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<RegisterForm />} />
-            <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/dashboard" username={"Alex"} element={<DashboardPage />} />
           </Routes>
         </div>
       </Router>

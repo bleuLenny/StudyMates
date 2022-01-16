@@ -1,14 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.css'
+// import { Footer } from "bootstrap/dist/css/bootstrap.css";
 // import { Footer } from 'react-bootstrap'
 
 const Footer = () => {
-    return (
-        <Footer sticky="bottom">
-            <div className='container'>Lovingly made by team BAAK End</div>
-        </Footer>
-    )
-}
+  return (
+    <footer className="blockquote-footer">
+      <div className="container">Lovingly made by team BAAK End</div>
+    </footer>
+  );
+};
 
-
-
-export default Footer
+export default Footer;
