@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'
 import 'bootstrap/dist/css/bootstrap.css'
-
+import { Footer } from 'react-bootstrap'
 
 const Footer = () => {
     return (
-        <Footer className='footer'>
+        <Footer sticky="bottom">
             <div className='container'>Lovingly made by team BAAK End</div>
         </Footer>
     )
