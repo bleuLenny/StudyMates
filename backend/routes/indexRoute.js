@@ -12,7 +12,7 @@ router.post("/login", authController.loginSubmit);
 
 router.get("/api/", function(req, res) {
     console.log(req.session)
-    res.send(req.session)
+    res.send([req.session,req.user])
   }
 );
 

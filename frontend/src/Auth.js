@@ -1,8 +1,5 @@
-import axios from 'axios';
-
-
 class Auth {
-    
+
   constructor() {
     this.authenticated = false;
   }
