@@ -9,6 +9,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Search from "./pages/dashboard/Search";
 import Carousel from "./components/Carousel/Carousel";
 import CreatePage from "./pages/CRUD/CreatePage";
+import UpdatePage from "./pages/CRUD/UpdatePage";
 
 const Routing = () => {
   return (
@@ -26,6 +27,7 @@ const Routing = () => {
             <Route path="/search" element={<Search />} />
             <Route path="/carousel" element={<Carousel />} />
             <Route path="/create" element={<CreatePage/>}/>
+            <Route path="/update" element={<UpdatePage/>}/>
 
           </Routes>
         </div>
