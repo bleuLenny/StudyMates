@@ -17,7 +17,7 @@ const Update = () => {
       <Header />
       <Card className="creategrid">
         <Card.Body>
-          <Card.Title>Create your Study Group</Card.Title>
+          <Card.Title>Edit your Study Group</Card.Title>
           <InputGroup className="mb-3">
             <InputGroup.Text id="basic-addon1">Group Name: </InputGroup.Text>
             <FormControl
