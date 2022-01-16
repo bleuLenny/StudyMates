@@ -10,6 +10,7 @@
   background-color: var(--pewter);
   padding: 50px;
   margin-top: 72px;
+  height: 100%;
   color: var(--prussian);
 }
   
@@ -21,6 +22,17 @@
   
 .sign-up-form  {
   line-height: 3em;
+}
+
+.sign-up-button {
+  background-color: var(--crayola);
+  color: var(--prussian);
+  border-style: none;
+}
+
+.sign-up-button:hover {
+  background-color: var(--prussian);
+  color: var(--crayola);
 }
  
 .color-nav {
@@ -34,4 +46,12 @@
 
 .nav-link {
   color: var(--prussian);
+}
+
+.navbar-brand:hover {
+  color: unset;
+}
+
+.nav-link:hover {
+  color: var(--pewter);
 }
