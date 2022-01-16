@@ -13,7 +13,7 @@ let authController = {
   registerSubmit: (req, res) => {
     console.log("Email:",req.body['email']);
     console.log("Password:",req.body['password']);
-    console.log(req)
+    // console.log(req)
     res.redirect('/dashboard')
   },
 
