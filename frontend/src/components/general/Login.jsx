@@ -38,8 +38,7 @@ const Login = () => {
                   placeholder="Password"
                 />
               </div>
-              <button type="submit" className="btn btn-primary border-0" 
-                style={{backgroundcolor: "#00243D", color:"#FFD485"}}>
+              <button type="submit" className="btn btn-primary border-0">
                 Submit
               </button>
             </form>

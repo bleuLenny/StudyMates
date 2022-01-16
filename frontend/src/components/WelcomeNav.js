@@ -7,7 +7,7 @@ const WelcomeNav = () => {
     <div className="App">
       <nav className="navbar navbar-expand-lg color-nav">
         <Link className="navbar-brand" to="/">
-          StudyMate
+          StudyMates
         </Link>
         <button
           className="navbar-toggler"

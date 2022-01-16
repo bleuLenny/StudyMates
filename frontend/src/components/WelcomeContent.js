@@ -7,7 +7,7 @@ const WelcomeContent = () => {
       <Row>
         <Col>
           <Container className="wel-banner fluid">
-            <h1>StudyMate</h1>
+            <h1>StudyMates</h1>
             <br></br>
             <h5>
               Stop struggling <br></br> Start studying

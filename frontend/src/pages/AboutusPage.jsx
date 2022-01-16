@@ -9,7 +9,7 @@ export default function AboutusPage() {
     return (
         <div>
             <WelcomeNav/>
-            <Container>
+            <Container className="about-content">
                 <Col>
                     <Row>
                         <Container className='background-property'>
@@ -29,7 +29,7 @@ export default function AboutusPage() {
                         <CardGroup>
                             <Card>
                                 <Card.Img className='about-selfie' variant="top" src="amandaselfie.jpg" style={{height: "20rem"}}/>
-                                <Card.Body>
+                                <Card.Body className="about-body">
                                     <Card.Title>Amanda Kuiack</Card.Title>
                                     <Card.Text>
                                     I am a Co-op student completing my Computer Information Technology 
@@ -45,7 +45,7 @@ export default function AboutusPage() {
                             </Card>
                             <Card>
                                 <Card.Img className='about-selfie' variant="top" src="kittyselfie.jpg" style={{height: "20rem"}} />
-                                <Card.Body>
+                                <Card.Body className="about-body">
                                     <Card.Title>Kitty Low</Card.Title>
                                     <Card.Text>
                                     Some quick example text to build on the card title and make up the bulk of
@@ -58,7 +58,7 @@ export default function AboutusPage() {
                             </Card>
                             <Card>
                                 <Card.Img className='about-selfie' variant="top" src="alexselfie.jpg" style={{height: "20rem"}} />
-                                <Card.Body>
+                                <Card.Body className="about-body">
                                     <Card.Title>Alex Amog</Card.Title>
                                     <Card.Text>
                                     Some quick example text to build on the card title and make up the bulk of
@@ -71,7 +71,7 @@ export default function AboutusPage() {
                             </Card>
                             <Card>
                                 <Card.Img className='about-selfie' variant="top" src="bryanselfie.jpg" style={{height: "20rem"}}/>
-                                <Card.Body>
+                                <Card.Body className="about-body">
                                     <Card.Title>Bryan Campos Leguia</Card.Title>
                                     <Card.Text>
                                     Some quick example text to build on the card title and make up the bulk of

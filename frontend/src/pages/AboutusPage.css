@@ -1,3 +1,15 @@
+:root {
+    --prussian: #00243D;
+    --richblack: #00171F;
+    --cultured: #F5F5F5;
+    --pewter: #89B1BD;
+    --crayola: #FFD485;
+}
+
+* {
+    color: var(--prussian);
+}
+
 .background-property img{
     flex: 1;
     width: 100%;
@@ -35,3 +47,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.about-content {
+    background-color: var(--pewter);
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.about-body {
+    background-color: var(--cultured);
+}
+
+::-webkit-scrollbar {display:none;}
