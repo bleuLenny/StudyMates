@@ -1,9 +1,9 @@
 import React from "react";
-import WelcomeNav from '../WelcomeNav'
+import WelcomeNav from "../WelcomeNav";
 const RegisterForm = () => {
   return (
     <div>
-    <WelcomeNav/>
+      <WelcomeNav />
       <div className="container">
         <form action="/auth/register" method="POST">
           <div className="form-group">
@@ -21,7 +21,7 @@ const RegisterForm = () => {
             </small>
           </div>
           <div className="form-group">
-            <label >Password</label>
+            <label>Password</label>
             <input
               type="password"
               name="password"
