@@ -4,10 +4,10 @@ import { Container, Row, Col, Button, Form } from "react-bootstrap";
 
 const WelcomeContent = () => {
   return (
-    <div className="wel-content sm">
+    <Container className="wel-content fluid sm">
       <Row>
         <Col>
-          <Container className="wel-banner">
+          <Container className="wel-banner fluid">
             <h1>StudyMate</h1>
             <br></br>
             <h5>Stop struggling <br></br> Start studying</h5>
@@ -15,7 +15,7 @@ const WelcomeContent = () => {
         </Col>
 
         <Col>
-          <Container className="sign-up-form" >
+          <Container className="sign-up-form fluid" >
             <h4>Get started</h4>
             <Form>
               <Row>
@@ -58,7 +58,7 @@ const WelcomeContent = () => {
           </Container>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 
