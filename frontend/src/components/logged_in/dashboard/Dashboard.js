@@ -11,7 +11,9 @@ const Dashboard = ({ username }) => {
       <Header username={username} />
       <Card className="mt-5 p-3 Dashboard-Welcome">
         <Card.Body>
-          <Card.Title>Welcome {username}!</Card.Title>
+          <Card.Title>
+            <h1>Welcome {username}!</h1>
+          </Card.Title>
           <CardGroup>
             <Card style={statsStyle}>
               <Card.Body>
@@ -27,7 +29,9 @@ const Dashboard = ({ username }) => {
           </CardGroup>
         </Card.Body>
       </Card>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 };
