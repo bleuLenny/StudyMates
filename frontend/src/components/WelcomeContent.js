@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./WelcomePage.css";
+import "../pages/Welcomepage/WelcomePage.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 const WelcomeContent = () => {
   return (

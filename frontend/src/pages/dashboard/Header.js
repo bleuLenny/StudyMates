@@ -17,13 +17,13 @@ const Header = ({ title, username }) => {
         <Nav>
           <NavDropdown title="Study Groups">
             <NavDropdown.Item>
-              <Link to="create">Create a group</Link>
+              <Link to="/create">Create a group</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="mygroups">View your Groups</Link>
+              <Link to="/mygroups">View your Groups</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="search">Search for a group</Link>
+              <Link to="/search">Search for a group</Link>
             </NavDropdown.Item>
           </NavDropdown>
 

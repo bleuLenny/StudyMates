@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./WelcomePage.css";
+import "../pages/Welcomepage/WelcomePage.css";
 import { Link } from "react-router-dom";
 
 const WelcomeNav = () => {

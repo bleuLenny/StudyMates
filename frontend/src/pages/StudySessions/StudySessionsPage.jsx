@@ -1,5 +1,5 @@
 import React from "react";
-import StudySessions from "../components/logged_in/studysessions/StudySessions";
+import StudySessions from '../StudySessions/StudySessionsPage'
 
 
 
