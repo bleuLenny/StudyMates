@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import "./Login.css";
 import WelcomeNav from "../WelcomeNav";
-const Test = () => {
+const Login = () => {
   return (
     <div>
       <WelcomeNav />
@@ -51,8 +51,30 @@ const Test = () => {
         </Col>
         <Col className="login-content"></Col>
       </Row>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              className="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+        <p className="mt-4">
+          New User? <Link to="/register">Register</Link>
+        </p>
+        <p>
+          Forgot Password? <Link to="#">Reset</Link>
+        </p>
+      </div>
     </div>
   );
 };
 
-export default Test;
+export default Login;
