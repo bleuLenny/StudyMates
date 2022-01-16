@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/general/Login";
 import RegisterForm from "./components/general/RegisterForm";
+import AboutusPage from "./pages/AboutusPage";
 import Welcome from "./pages/WelcomePage";
 function Routing() {
   return (
@@ -11,6 +12,7 @@ function Routing() {
             <Route path="/" element={<Welcome />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<RegisterForm />} />
+            <Route path="/about" element={<AboutusPage />} />
           </Routes>
         </div>
       </Router>
