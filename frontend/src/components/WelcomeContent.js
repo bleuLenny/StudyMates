@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WelcomePage.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
-
+import {Link} from 'react-router-dom';
 const WelcomeContent = () => {
   return (
     <Container className="wel-content fluid sm">
@@ -10,12 +10,14 @@ const WelcomeContent = () => {
           <Container className="wel-banner fluid">
             <h1>StudyMate</h1>
             <br></br>
-            <h5>Stop struggling <br></br> Start studying</h5>
+            <h5>
+              Stop struggling <br></br> Start studying
+            </h5>
           </Container>
         </Col>
 
         <Col>
-          <Container className="sign-up-form fluid" >
+          <Container className="sign-up-form fluid">
             <h4>Get started</h4>
             <Form>
               <Row>
@@ -51,8 +53,11 @@ const WelcomeContent = () => {
                 </Col>
               </Row>
               <br></br>
-              <Button className="sign-up-button"variant="primary" type="submit">
-                Sign Up
+              <Button
+                className="sign-up-button"
+                variant="primary"
+              >
+                <Link to='/register'>Sign up</Link>
               </Button>
             </Form>
           </Container>
