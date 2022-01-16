@@ -66,7 +66,12 @@ const Dashboard = () => {
   } else {
     return (
       <h1>
-        You are not logged in. <br/>{<Link to="/login"><button>Login here</button></Link>}
+        You are not logged in. <br />
+        {
+          <Link to="/login">
+            <button>Login here</button>
+          </Link>
+        }
       </h1>
     );
   }
