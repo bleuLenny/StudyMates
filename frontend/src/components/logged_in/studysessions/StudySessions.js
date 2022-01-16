@@ -5,14 +5,9 @@ import Carousel from "react-bootstrap/Carousel";
 
 
 const StudySessions = ({ groupname, groupclass, grouptime, groupday, groupinfo, groupnumbers }) => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
