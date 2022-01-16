@@ -7,18 +7,31 @@
 }
 
 .wel-content {
-    background-color: var(--pewter);
-    padding: 50px;
-    color: var(--prussian);
-  }
+  background-color: var(--pewter);
+  padding: 50px;
+  margin-top: 72px;
+  color: var(--prussian);
+}
   
-  .wel-banner {
-    text-align: center;
-    margin-top: 75px;
-    padding: 100px;
-  }
+.wel-banner {
+  text-align: center;
+  margin-top: 75px;
+  padding: 100px;
+}
   
-  .sign-up-form  {
-    line-height: 3em;
-  }
-  
+.sign-up-form  {
+  line-height: 3em;
+}
+ 
+.color-nav {
+  padding: 1em;
+  background-color: var(--cultured);
+}
+
+.navbar-brand {
+  color: var(--prussian);
+}
+
+.nav-link {
+  color: var(--prussian);
+}
