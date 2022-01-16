@@ -4,6 +4,7 @@ import RegisterForm from "./components/general/RegisterForm";
 import AboutusPage from "./pages/AboutusPage";
 import WelcomePage from "./pages/WelcomePage";
 import StudySessions from "./components/logged_in/studysessions/StudySessions";
+import PersonalGroups from "./components/logged_in/dashboard/PersonalGroups"
 import Dashboard from "./components/logged_in/dashboard/Dashboard";
 const Routing = () => {
   return (
@@ -17,6 +18,7 @@ const Routing = () => {
             <Route path="/studygroups" element={<StudySessions/>} />
             <Route path="/about" element={<AboutusPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path='/mygroups' element={<PersonalGroups/>}/>
           </Routes>
         </div>
       </Router>

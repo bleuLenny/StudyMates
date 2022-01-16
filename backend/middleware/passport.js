@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const userController = require('../controller/userController')
-const process = require("process");
+const bcrypt = require("bcryptjs");
+const User = require("../models/users");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -11,26 +11,31 @@ const localLogin = new LocalStrategy(
     passwordField: "password",
   },
   (email, password, done) => {
-    const user = userController.getUserByEmailIdAndPassword(email, password);
-    return user
-      ? done(null, user)
-      : done(null, false, {
-          message: "Your login details are not valid. Please try again",
-        });
+    User.findOne({ email: email }, (err, user) => {
+      if (err) throw err;
+      if (!user) return done(null, false);
+      bcrypt.compare(password, user.password, (err, result) => {
+        if (err) throw err;
+        if (result === true) {
+          return done(null, user);
+        } else {
+          return done(null, false);
+        }
+      });
+    });
   }
 );
 
-passport.serializeUser(function (user, done) {
-  done(null, user.id);
+passport.serializeUser((user, cb) => {
+  cb(null, user.id);
 });
-
-passport.deserializeUser(function (id, done) {
-  let user = userController.getUserById(id);
-  if (user) {
-    done(null, user);
-  } else {
-    done({ message: "User not found" }, null);
-  }
+passport.deserializeUser((id, cb) => {
+  User.findOne({ _id: id }, (err, user) => {
+    const full_name = `${user.first_name} ${user.last_name}`
+    const userInformation = {
+      username: full_name,
+    };
+    cb(err, userInformation);
+  });
 });
-
 module.exports = passport.use(localLogin);
