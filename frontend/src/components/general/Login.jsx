@@ -4,7 +4,6 @@ const Test = () => {
   return (
     <div>
       <WelcomeNav />
-
       <div className="container">
         <form action="/auth/login" method="POST">
           <div className="form-group">
@@ -14,7 +13,7 @@ const Test = () => {
               type="email"
               name="email"
               className="form-control"
-              // id="exampleInputEmail1"
+              id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />

@@ -2,7 +2,7 @@ import React from "react";
 import WelcomeNav from "../components/WelcomeNav";
 import WelcomeContent from "../components/WelcomeContent";
 
-export const Welcome = () => {
+export const WelcomePage = () => {
   return (
     <div>
       <WelcomeNav />
@@ -11,4 +11,4 @@ export const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default WelcomePage;
