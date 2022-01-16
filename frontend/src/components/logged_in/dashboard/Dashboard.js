@@ -4,8 +4,20 @@ import Footer from "./Footer";
 import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, CardGroup } from "react-bootstrap";
+import { useEffect } from "react";
+import { Navigate } from "react-router-dom";
+import axios from "axios";
 
-const Dashboard = () => {
+const Dashboard = ({ username }) => {
+  useEffect(() => {
+    axios.get("/api/").then((val) => {
+      console.log(val.data.passport)
+      if (val.data.passport === undefined) {
+        return <Navigate to="/login" replace={true} />;
+      }
+    });
+  });
+
   return (
     <div>
       <Header username={username} />
@@ -18,27 +30,26 @@ const Dashboard = () => {
             <Card style={statsStyle}>
               <Card.Body>
                 <Card.Title>{username}'s Stats</Card.Title>
-                <Card.Text>
-                  <p>Student ID: </p>
-                  <p>Program: </p>
-                  <p>Study Groups Owned: </p>
-                  <p>Study Groups Joined: </p>
-                  <p>Current Tags: </p>
-                </Card.Text>
+                <Card.Text />
+                <p>Student ID: </p>
+                <p>Program: </p>
+                <p>Study Groups Owned: </p>
+                <p>Study Groups Joined: </p>
+                <p>Current Tags: </p>
+                {/* </Card.Text> */}
               </Card.Body>
             </Card>
             <Card style={statsStyle}>
               <Card.Body>
                 <Card.Title>Upcoming Study Sessions</Card.Title>
-                <Card.Text>
-                  <p>Next study session: 00:00 AM/PM DD/MM/YYYY</p>
-                  <p>Study sessions this week:</p>
-                  <ul>
-                    <li>This one</li>
-                    <li>Next one</li>
-                    <li>Another one</li>
-                  </ul>
-                </Card.Text>
+                <Card.Text />
+                <p>Next study session: 00:00 AM/PM DD/MM/YYYY</p>
+                <p>Study sessions this week:</p>
+                <ul>
+                  <li>This one</li>
+                  <li>Next one</li>
+                  <li>Another one</li>
+                </ul>
               </Card.Body>
             </Card>
           </CardGroup>
@@ -47,7 +58,6 @@ const Dashboard = () => {
       <div className="footer">
         <Footer />
       </div>
-
     </div>
   );
 };
