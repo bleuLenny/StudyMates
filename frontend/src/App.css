@@ -1,3 +1,11 @@
+:root {
+  --prussian: #00243D;
+  --richblack: #00171F;
+  --cultured: #F5F5F5;
+  --pewter: #89B1BD;
+  --crayola: #FFD485;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(cultured);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
