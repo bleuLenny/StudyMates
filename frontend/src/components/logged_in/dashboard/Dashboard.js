@@ -18,12 +18,27 @@ const Dashboard = ({ username }) => {
             <Card style={statsStyle}>
               <Card.Body>
                 <Card.Title>{username}'s Stats</Card.Title>
-                <Card.Text>some stats here</Card.Text>
+                <Card.Text>
+                  <p>Student ID: </p>
+                  <p>Program: </p>
+                  <p>Study Groups Owned: </p>
+                  <p>Study Groups Joined: </p>
+                  <p>Current Tags: </p>
+                </Card.Text>
               </Card.Body>
             </Card>
             <Card style={statsStyle}>
               <Card.Body>
                 <Card.Title>Upcoming Study Sessions</Card.Title>
+                <Card.Text>
+                  <p>Next study session: 00:00 AM/PM DD/MM/YYYY</p>
+                  <p>Study sessions this week:</p>
+                  <ul>
+                    <li>This one</li>
+                    <li>Next one</li>
+                    <li>Another one</li>
+                  </ul>
+                </Card.Text>
               </Card.Body>
             </Card>
           </CardGroup>
