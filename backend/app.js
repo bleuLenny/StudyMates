@@ -27,14 +27,6 @@ const authRoute = require("./routes/authRoute");
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/test", (req, res) => {
-  res.redirect("/");
-});
-
-app.get("/logout", (req, res) => {
-  res.send("lol");
-});
-
 app.use("/", indexRoute);
 app.use("/auth", authRoute);
 
