@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const WelcomeNav = () => {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg color-nav fixed-top">
+      <nav className="navbar navbar-expand-lg color-nav">
         <Link className="navbar-brand" to="/">
           StudyMate
         </Link>

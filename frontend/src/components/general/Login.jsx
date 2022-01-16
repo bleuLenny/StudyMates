@@ -9,7 +9,7 @@ const Test = () => {
       <Row className="g-0">
         <Col className="login-content"></Col>
         <Col>
-          <div className="container login-content vh-100">
+          <div className="container login-content">
             <form action="/auth/login" method="POST" className="login-form">
               <div className="form-group">
                 <h3 className="text-center title">Login</h3>
