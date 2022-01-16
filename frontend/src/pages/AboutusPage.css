@@ -1,12 +1,14 @@
 .background-property img{
-    width: 1300px;
-    height: 500px;
+    flex: 1;
+    width: 100%;
+    height: null;
     opacity: 0.5;
 }
 
 .background-property{
     position: relative;
     text-align: center;
+    width: 100%
 }
 
 .center-info{
@@ -15,7 +17,7 @@
     position: absolute;
     padding: 20px;
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, -50%);
     color: black;
     border: 3px solid black;
@@ -24,4 +26,12 @@
 .sub-heading{
     text-align: center;
     padding: 20px;
+}
+
+.about-selfie {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
