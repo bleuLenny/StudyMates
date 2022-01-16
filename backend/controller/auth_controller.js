@@ -1,22 +1,32 @@
 const passport = require("../middleware/passport");
 const mongoose = require("mongoose");
-const user = require("../models/users");
-const dbURI =
-  "mongodb+srv://study_admin:HackathonGroup2022@studymates.ndlu7.mongodb.net/study-groups?retryWrites=true&w=majority";
+const User = require("../models/users");
+const bcrypt = require("bcryptjs");
+
 mongoose.connect(
-  dbURI,
+  "mongodb+srv://study_admin:HackathonGroup2022@studymates.ndlu7.mongodb.net/study-groups?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
   () => {
-    console.log("Mongoose is connected");
+    console.log("Mongoose Is Connected");
   }
 );
-
 let authController = {
-  login: (req, res) => {
-    console.log(req.body);
+  login: (req, res, next) => {
+    // console.log(req.body);
+    passport.authenticate("local", (err, user, info) => {
+      if (err) throw err;
+      if (!user) res.send("No user exitsts");
+      else {
+        req.login(user, (err) => {
+          if (err) throw err;
+          res.send("Succeess");
+          console.log(req.user);
+        });
+      }
+    })(req, res, next);
   },
   dashboard: (req, res) => {
     res.render("/");
@@ -25,20 +35,21 @@ let authController = {
     res.render("auth/register");
   },
   registerSubmit: (req, res) => {
-    console.log(req.body);
-    user.findOne({ email: req.body.email }, (err, doc) => {
-      if (err) {
-        throw err;
+    User.findOne({ email: req.body.email }, async (err, doc) => {
+      if (err) throw err;
+      if (doc) res.send("User already exists.");
+      if (!doc) {
+        const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+        const newUser = new User({
+          email: req.body.email,
+          first_name: req.body.first_name,
+          last_name: req.body.last_name,
+          password: hashedPassword,
+        });
+        await newUser.save();
+        res.send("User Created");
       }
-      if (doc) {
-        res.send("User already exists.");
-      }
-      const newUser = new user({
-        email: req.body.email,
-        password: req.body.password,
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-      });
     });
   },
 

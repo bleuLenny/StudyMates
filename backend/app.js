@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const request = require("request");
-const mongoose = require("mongoose");
 const cors = require("cors");
 const session = require("express-session");
 const passport = require("./middleware/passport");
@@ -28,6 +27,12 @@ app.use(
 );
 
 app.use(cookieParser("secretSecret"));
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+// require('./middleware/passport')(passport)
+
 
 const indexRoute = require("./routes/indexRoute");
 const authRoute = require("./routes/authRoute");

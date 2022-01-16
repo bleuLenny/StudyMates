@@ -39,7 +39,7 @@ const Test = () => {
           New User? <Link to="/register">Register</Link>
         </p>
         <p>
-          Forgot Password? <Link to="/forgot">Reset</Link>
+          Forgot Password? <Link to="#">Reset</Link>
         </p>
       </div>
     </div>
