@@ -5,7 +5,7 @@ import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 
 const Header = ({ title, username }) => {
     return (
-        <Navbar expand="lg" variant="light" bg="info" sticky="top">
+        <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
             <Container>
             <Navbar.Brand href="#">
             <h1> {title}</h1>
