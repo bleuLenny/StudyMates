@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
-const App = () => {
+const WelcomeNav = () => {
   return (
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,4 +37,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default WelcomeNav;
