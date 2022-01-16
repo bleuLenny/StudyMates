@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../App.css";
+import "../WelcomePage.css";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 
 const WelcomeContent = () => {
   return (
-    <div className="wel-content">
+    <div className="wel-content sm">
       <Row>
         <Col>
           <Container className="wel-banner">
@@ -15,7 +15,7 @@ const WelcomeContent = () => {
         </Col>
 
         <Col>
-          <Container className="sign-up-form">
+          <Container className="sign-up-form" >
             <h4>Get started</h4>
             <Form>
               <Row>
@@ -51,7 +51,7 @@ const WelcomeContent = () => {
                 </Col>
               </Row>
               <br></br>
-              <Button variant="primary" type="submit">
+              <Button className="sign-up-button"variant="primary" type="submit">
                 Sign Up
               </Button>
             </Form>
