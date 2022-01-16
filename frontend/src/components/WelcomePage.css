@@ -1,0 +1,57 @@
+:root {
+  --prussian: #00243D;
+  --richblack: #00171F;
+  --cultured: #F5F5F5;
+  --pewter: #89B1BD;
+  --crayola: #FFD485;
+}
+
+.wel-content {
+  background-color: var(--pewter);
+  padding: 50px;
+  margin-top: 72px;
+  height: 100%;
+  color: var(--prussian);
+}
+  
+.wel-banner {
+  text-align: center;
+  margin-top: 75px;
+  padding: 100px;
+}
+  
+.sign-up-form  {
+  line-height: 3em;
+}
+
+.sign-up-button {
+  background-color: var(--crayola);
+  color: var(--prussian);
+  border-style: none;
+}
+
+.sign-up-button:hover {
+  background-color: var(--prussian);
+  color: var(--crayola);
+}
+ 
+.color-nav {
+  padding: 1em;
+  background-color: var(--cultured);
+}
+
+.navbar-brand {
+  color: var(--prussian);
+}
+
+.nav-link {
+  color: var(--prussian);
+}
+
+.navbar-brand:hover {
+  color: unset;
+}
+
+.nav-link:hover {
+  color: var(--pewter);
+}
