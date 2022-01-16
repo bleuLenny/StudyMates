@@ -11,12 +11,15 @@ let authController = {
     res.render("auth/register");
   },
   registerSubmit: (req, res) => {
+    console.log("Email:",req.body['email']);
+    console.log("Password:",req.body['password']);
+    console.log(req)
     res.redirect('/dashboard')
   },
 
   loginSubmit: passport.authenticate("local", {
     successRedirect: "/dashboard",
-    failureRedirect: "/auth/login",
+    failureRedirect: "/login",
   }),
 
   logout: (req, res) => {
