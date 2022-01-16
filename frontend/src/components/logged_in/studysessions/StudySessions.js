@@ -2,64 +2,75 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./StudySessions.css";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { Card } from "react-bootstrap";
 
-const StudySessions = () => {
+
+const StudySessions = ({ groupname, groupclass, grouptime, groupday, groupinfo, groupnumbers }) => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg"
+          alt="First slide"
+        />
         <Carousel.Caption>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title><h3>First slide label</h3></Card.Title>
-              <Card.Text>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-            </Carousel.Caption>
+          <h3>Study Group: {groupname}</h3>
+          <p>Class: {groupclass}</p>
+          <p>Time: {grouptime}</p>
+          <p>Day: {groupday}</p>
+          <p>Info: {groupinfo}</p>
+          <p>Current number of members: {groupnumbers}</p>
+ 
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <Carousel.Caption>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title><h3>First slide label</h3></Card.Title>
-              <Card.Text>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-            </Carousel.Caption>
+        <img
+          className="d-block w-100"
+          src="https://www.lifewire.com/thmb/g2jva4iFBaG5vBXNpzEs8wEVYJY=/1920x1080/filters:no_upscale():max_bytes(150000):strip_icc()/passage_wallpaper_by_trenchmaker-d4pp3zd-5919d0673df78cf5fa42884c.jpg"
+          alt="Second slide"
+        />
 
+        <Carousel.Caption>
+        <h3>Study Group: {groupname}</h3>
+          <p>Class: {groupclass}</p>
+          <p>Time: {grouptime}</p>
+          <p>Day: {groupday}</p>
+          <p>Info: {groupinfo}</p>
+          <p>Current number of members: {groupnumbers}</p>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://cdn.hovia.com/app/uploads/Green-Tropical-Plant-Wallpaper-Mural-Plain-820x532.jpg"
+          alt="Third slide"
+        />
 
         <Carousel.Caption>
-        <Carousel.Caption>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title><h3>First slide label</h3></Card.Title>
-              <Card.Text>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-            </Carousel.Caption>
+        <h3>Study Group: {groupname}</h3>
+          <p>Class: {groupclass}</p>
+          <p>Time: {grouptime}</p>
+          <p>Day: {groupday}</p>
+          <p>Info: {groupinfo}</p>
+          <p>Current number of members: {groupnumbers}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 };
 
+StudySessions.defaultProps = {
+  groupname: "Some Math Class",
+  groupclass: "Math",
+  groupday: "Fridays",
+  grouptime: "04:30 PM",
+  groupinfo: "Here is some info about our group.",
+  groupnumbers: "6",
+};
 export default StudySessions;
