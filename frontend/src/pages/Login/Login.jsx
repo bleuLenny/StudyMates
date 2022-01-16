@@ -60,13 +60,13 @@ const Login = () => {
               </form>
               <p className="mt-4">
                 New User?{" "}
-                <Link to="/auth/register" className="login-links">
+                <Link to="/" className="login-links">
                   Register
                 </Link>
               </p>
               <p>
                 Forgot Password?{" "}
-                <Link to="/auth/forgot" className="login-links">
+                <Link to="/forgot" className="login-links">
                   Reset
                 </Link>
               </p>
@@ -77,7 +77,7 @@ const Login = () => {
       </div>
     );
   } else {
-    return(<h1>You're already logged in as {username}</h1>);
+    return <h1>You're already logged in as {username}</h1>;
   }
 };
 
