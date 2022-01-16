@@ -6,6 +6,8 @@ import WelcomePage from "./pages/WelcomePage";
 import StudySessions from "./components/logged_in/studysessions/StudySessions";
 import PersonalGroups from "./components/logged_in/dashboard/PersonalGroups"
 import Dashboard from "./components/logged_in/dashboard/Dashboard";
+import Search from "./components/logged_in/dashboard/Search"
+
 const Routing = () => {
   return (
     <div className="routing">
@@ -19,6 +21,7 @@ const Routing = () => {
             <Route path="/about" element={<AboutusPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path='/mygroups' element={<PersonalGroups/>}/>
+            <Route path='/search' element={<Search/>}/>
           </Routes>
         </div>
       </Router>
