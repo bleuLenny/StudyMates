@@ -69,7 +69,7 @@ export default function AboutusPage() {
                 />
                 <Card.Body>
                   <Card.Title>Alex Amog</Card.Title>
-                  <Card.Text>I am a third term co-op student in Computer Information Technology.</Card.Text>
+                  <Card.Text>I am a third term co-op student in BCIT's Computer Information Technology.</Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <small className="text-muted">BCIT Student</small>
