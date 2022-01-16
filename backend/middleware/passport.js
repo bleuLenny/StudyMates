@@ -1,6 +1,5 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const userController = require("../controller/userController");
 const bcrypt = require("bcryptjs");
 const User = require("../models/users");
 const dotenv = require("dotenv");
