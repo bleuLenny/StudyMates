@@ -11,7 +11,9 @@ let authController = {
     res.render("auth/register");
   },
   registerSubmit: (req, res) => {
-    console.log(req.body);
+    console.log("Email:",req.body['email']);
+    console.log("Password:",req.body['password']);
+    console.log(req)
     res.redirect('/dashboard')
   },
 
