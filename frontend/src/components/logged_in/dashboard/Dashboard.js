@@ -9,11 +9,11 @@ import axios from "axios";
 
 const Dashboard = () => {
   const [auth, setAuth] = useState(false);
-  const [username,setUsername] = useState("")
+  const [username, setUsername] = useState("");
   useEffect(() => {
     axios.get("/api/").then((val) => {
       setUsername(val.data[1].username);
-      if (val.data[0].passport.user!== undefined) {
+      if (val.data[0].passport.user !== undefined) {
         setAuth(true);
       }
     });
