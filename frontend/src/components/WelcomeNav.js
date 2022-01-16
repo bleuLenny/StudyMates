@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./WelcomePage.css";
 import { Link } from "react-router-dom";
 
-const App = () => {
+const WelcomeNav = () => {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg color-nav">
         <Link className="navbar-brand" to="/">
           StudyMate
         </Link>
@@ -37,4 +38,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default WelcomeNav;

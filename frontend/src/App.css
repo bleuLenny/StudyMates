@@ -22,7 +22,7 @@
 }
 
 .App-header {
-  background-color: cultured;
+  background-color: var(cultured);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,13 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.wel-content {
-  margin-top: 100px;
-}
-
-.wel-banner {
-  text-align: center;
-  padding: 100px;
 }

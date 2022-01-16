@@ -5,7 +5,7 @@ import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, CardGroup } from "react-bootstrap";
 
-const Dashboard = ({ username }) => {
+const Dashboard = () => {
   return (
     <div>
       <Header username={username} />
@@ -47,6 +47,7 @@ const Dashboard = ({ username }) => {
       <div className="footer">
         <Footer />
       </div>
+
     </div>
   );
 };
