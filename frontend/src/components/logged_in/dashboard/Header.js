@@ -5,6 +5,27 @@ import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 const Header = ({ title, username }) => {
+    return (
+        <Navbar expand="lg" variant="dark" bg="dark" sticky="top">
+            <Container>
+            <Navbar.Brand href="#">
+            <h1> {title}</h1>
+            </Navbar.Brand>
+            <Nav>
+                <NavDropdown title="Study Groups">
+                    <NavDropdown.Item href='search'>Search Groups</NavDropdown.Item>
+                    <NavDropdown.Item href='mygroups'>View {username} Groups</NavDropdown.Item>
+                    <NavDropdown.Item href='create'>Create Group</NavDropdown.Item>
+                </NavDropdown>
+                
+                <Nav.Link href='logout'>Logout</Nav.Link>
+                
+            </Nav>
+            </Container>
+        </Navbar>
+    )
+}
+
   const logOutButton = () => {
     axios.get("/auth/logout");
     <Navigate to="/" />;
