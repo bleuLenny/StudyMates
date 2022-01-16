@@ -1,15 +1,15 @@
 import React from "react";
-import <Read></Read> from "../../components/CRUD/Create";
+import Read from "../../components/CRUD/Read";
 // import PropTypes from 'prop-types';
 
 
-export const CreatePage = ({ username }) => {
+export const ReadPage = () => {
   return (
     <div>
-      <Create />
+      <Read />
 
     </div>
   );
 };
 
-export default CreatePage;
+export default ReadPage;
