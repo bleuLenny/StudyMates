@@ -37,8 +37,8 @@ let authController = {
   registerSubmit: (req, res) => {
     User.findOne({ email: req.body.email }, async (err, doc) => {
       if (err) throw err;
-      if (doc) res.send("User already exists.");
-      if (!doc) {
+      if (doc) res.redirect("/");
+      if (!doc && req.email != "") {
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
 
         const newUser = new User({
@@ -48,7 +48,8 @@ let authController = {
           password: hashedPassword,
         });
         await newUser.save();
-        res.send("User Created");
+        // res.send("User Created");
+        res.redirect("/login");
       }
     });
   },
@@ -59,8 +60,8 @@ let authController = {
   }),
 
   logout: (req, res) => {
-    res.redirect("/");
     req.logout();
+    res.redirect("/");
   },
 };
 

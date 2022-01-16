@@ -5,15 +5,17 @@ import "./Dashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, CardGroup } from "react-bootstrap";
 import { useEffect } from "react";
-import axios from 'axios'
+import { Navigate } from "react-router-dom";
+import axios from "axios";
 
 const Dashboard = ({ username }) => {
   useEffect(() => {
-    axios.get('/logout')
-    .then(val=>{
-      console.log(val)
-    })
-    // console.log("hello");
+    axios.get("/api/").then((val) => {
+      console.log(val.data.passport)
+      if (val.data.passport === undefined) {
+        return <Navigate to="/login" replace={true} />;
+      }
+    });
   });
 
   return (
@@ -40,14 +42,14 @@ const Dashboard = ({ username }) => {
             <Card style={statsStyle}>
               <Card.Body>
                 <Card.Title>Upcoming Study Sessions</Card.Title>
-                <Card.Text/>
+                <Card.Text />
                 <p>Next study session: 00:00 AM/PM DD/MM/YYYY</p>
-                  <p>Study sessions this week:</p>
-                  <ul>
-                    <li>This one</li>
-                    <li>Next one</li>
-                    <li>Another one</li>
-                  </ul>
+                <p>Study sessions this week:</p>
+                <ul>
+                  <li>This one</li>
+                  <li>Next one</li>
+                  <li>Another one</li>
+                </ul>
               </Card.Body>
             </Card>
           </CardGroup>
