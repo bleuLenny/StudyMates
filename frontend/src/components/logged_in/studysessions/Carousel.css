@@ -1,6 +1,6 @@
 .carousel {
     width: 60%;
-    height: 600px;
+    height: 510px;
     background-color: black;
 }
 .carousel-inner {
@@ -10,4 +10,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+}
+
+.carousel-inner .left {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+    color: #89B1BD;
+    cursor: pointer;
+}
+
+.carousel-inner .center {
+    flex: 90%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    text-align-last: center;
+  
+}
+
+
+h2, h3 {
+    background-color: rgb(0, 36, 61,0.7);
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.carousel-inner .right {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+    color: #89B1BD;
+    cursor: pointer;
 }
