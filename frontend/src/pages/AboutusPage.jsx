@@ -20,7 +20,7 @@ export default function AboutusPage() {
                     Team members 
                 </h2>
             </div>
-        <CardGroup>
+        <CardGroup style={{ width: '40rem'}}>
             <Card style={{ width: '100px' }}>
             <Card.Img variant="top" src="amandaselfie.jpg" style={{width: '18rem', height: "20rem"}}/>
             <Card.Body>
