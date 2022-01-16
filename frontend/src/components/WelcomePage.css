@@ -24,14 +24,15 @@
 }
 
 .sign-up-button {
-  background-color: var(--crayola);
-  color: var(--prussian);
+  background-color: var(--prussian);
+  color: var(--crayola);
   border-style: none;
+  margin-top: -2em;
 }
 
 .sign-up-button:hover {
-  background-color: var(--prussian);
-  color: var(--crayola);
+  background-color: var(--crayola);
+  color: var(--prussian);
 }
  
 .color-nav {
