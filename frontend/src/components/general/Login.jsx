@@ -7,10 +7,9 @@ const Test = () => {
     <div>
       <WelcomeNav />
       <Row className="g-0">
-
         <Col className="login-content"></Col>
         <Col>
-          <div className="container login-content">
+          <div className="container login-content vh-100">
             <form action="/auth/login" method="POST" className="login-form">
               <div className="form-group">
                 <h3 className="text-center title">Login</h3>
@@ -37,15 +36,16 @@ const Test = () => {
                   placeholder="Password"
                 />
               </div>
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary border-0" 
+                style={{backgroundcolor: "#00243D"}, {color:"#FFD485"}}>
                 Submit
               </button>
             </form>
             <p className="mt-4">
-              New User? <Link to="/auth/register">Register</Link>
+              New User? <Link to="/auth/register" className="login-links">Register</Link>
             </p>
             <p>
-              Forgot Password? <Link to="/auth/forgot">Reset</Link>
+              Forgot Password? <Link to="/auth/forgot" className="login-links">Reset</Link>
             </p>
           </div>
         </Col>

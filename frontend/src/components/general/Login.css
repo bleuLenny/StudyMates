@@ -7,11 +7,9 @@
 }
 
 .login-content {
-    margin-top: 72px;
     background-color: var(--pewter);
     overflow: hidden;
-    padding-top: 2em;
-    padding-bottom: 6em;
+    padding-top: 7em;
     color: var(--prussian);
 }
 
@@ -21,4 +19,18 @@
 
 .login-form {
     line-height: 2.5em;
+}
+
+.btn {
+    margin-top: 2em;
+    background-color: var(--prussian);
+}
+
+.login-links {
+    color: var(--cultured);
+    text-decoration: none;
+}
+
+.login-links:hover {
+    color: var(--crayola);
 }
