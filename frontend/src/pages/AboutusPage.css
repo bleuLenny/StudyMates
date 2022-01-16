@@ -14,7 +14,7 @@
     flex: 1;
     width: 100%;
     height: null;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .background-property{
@@ -24,15 +24,15 @@
 }
 
 .center-info{
-    background-color: white;
+    background-color: var(--cultured);
     border-radius: 20px;
     position: absolute;
     padding: 20px;
     top: 50%;
     left: 52%;
     transform: translate(-50%, -50%);
-    color: black;
-    border: 3px solid black;
+    color: var(--richblack);
+    border: 3px solid var(--richblack);
 }
 
 .sub-heading{

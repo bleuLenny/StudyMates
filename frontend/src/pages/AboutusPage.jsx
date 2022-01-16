@@ -13,7 +13,7 @@ export default function AboutusPage() {
                 <Col>
                     <Row>
                         <Container className='background-property'>
-                            <Image className='fluid' src='groupstockphoto.jpg' alt=''/>
+                            <Image className='fluid' src='startup.jpg' alt=''/>
                             <div className='center-info'>
                                 <h1>Meet the StudyMates Team</h1>
                             </div>
