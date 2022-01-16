@@ -9,6 +9,7 @@
 .wel-content {
   background-color: var(--pewter);
   padding: 50px;
+  padding-bottom: 35px;
   height: 100%;
   color: var(--prussian);
 }

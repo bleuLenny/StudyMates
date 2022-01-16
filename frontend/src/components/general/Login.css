@@ -10,6 +10,8 @@
     background-color: var(--pewter);
     overflow: hidden;
     color: var(--prussian);
+    padding-top: 3em;
+    padding-bottom: 4em;
 }
 
 .title {

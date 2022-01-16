@@ -1,10 +1,6 @@
 .main-footer {
-    text-align: center;
-    background-color: #FFD485;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    position: fixed;
-    bottom: 0;
-    width: 85vw;
-    margin-left: 0;
-  }
+  text-align: center;
+  background-color: #FFD485;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}

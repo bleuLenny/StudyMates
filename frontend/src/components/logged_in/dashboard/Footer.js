@@ -1,14 +1,12 @@
 import './Footer.css'
-import { Card } from 'react-bootstrap'
+import { Card, Container } from 'react-bootstrap'
 
 
 const Footer = () => {
   return (
-    <Card>
-    <div className='main-footer'>
-        <div className="container">Lovingly made by team BAAK End</div>
-      </div>
-      </Card>
+    <Container className='main-footer'>
+      <div className="container">Lovingly made by team BAAK End</div>
+    </Container>
   );
 };
 

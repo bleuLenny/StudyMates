@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import "./Login.css";
 import WelcomeNav from "../WelcomeNav";
+import Footer from "../logged_in\\dashboard/Footer.js"
+
 const Login = () => {
   return (
     <div>
@@ -51,6 +53,7 @@ const Login = () => {
         </Col>
         <Col className="login-content"></Col>
       </Row>
+      <Footer />
     </div>
   );
 };

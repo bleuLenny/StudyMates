@@ -1,5 +1,6 @@
 import React from 'react'
 import WelcomeNav from "../components/WelcomeNav"
+import Footer from "../components/logged_in\\dashboard/Footer.js"
 import {Card, CardGroup, Container, Col, Row } from "react-bootstrap"
 import Image from 'react-bootstrap/Image'
 import "./AboutusPage.css"
@@ -85,7 +86,7 @@ export default function AboutusPage() {
                     </Row>
                 </Col>
             </Container>
-            
+            <Footer />
         </div>
     )
 }
