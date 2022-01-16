@@ -6,7 +6,8 @@ const Header = ({ title, username }) => {
     return (
         <Navbar expand="lg" variant="light" bg="info" sticky="top">
             <Navbar.Brand href="#">
-            <h1>{title}</h1>
+            <h1> {title}</h1>
+            </Navbar.Brand>
             <Nav>
                 <NavDropdown title="Study Groups">
                     <NavDropdown.Item href='search'>Search Groups</NavDropdown.Item>
@@ -15,7 +16,7 @@ const Header = ({ title, username }) => {
                 </NavDropdown>
                 <Nav.Link href='logout'>Logout</Nav.Link>
             </Nav>
-            </Navbar.Brand>
+            
         </Navbar>
     )
 }
