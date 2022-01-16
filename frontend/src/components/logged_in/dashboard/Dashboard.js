@@ -6,12 +6,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, CardGroup } from "react-bootstrap";
 import { useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [auth, setAuth] = useState(false);
   const [username, setUsername] = useState("");
   useEffect(() => {
-    axios.get("/api/").then((val) => {
+    axios.get("/api/auth").then((val) => {
       setUsername(val.data[1].username);
       if (val.data[0].passport.user !== undefined) {
         setAuth(true);
@@ -63,7 +64,11 @@ const Dashboard = () => {
       </div>
     );
   } else {
-    return <h1>You are not logged in</h1>;
+    return (
+      <h1>
+        You are not logged in. <br/>{<Link to="/login"><button>Login here</button></Link>}
+      </h1>
+    );
   }
 };
 

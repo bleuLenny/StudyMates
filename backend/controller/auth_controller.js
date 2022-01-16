@@ -2,9 +2,12 @@ const passport = require("../middleware/passport");
 const mongoose = require("mongoose");
 const User = require("../models/users");
 const bcrypt = require("bcryptjs");
+const process = require("process");
+const dotenv = require("dotenv");
+dotenv.config();
 
 mongoose.connect(
-  "mongodb+srv://study_admin:HackathonGroup2022@studymates.ndlu7.mongodb.net/study-groups?retryWrites=true&w=majority",
+  process.env.DATABASE_URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
