@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import 'bootstrap/dist/css/bootstrap.css'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import PropTypes from 'prop-types';
+import 'bootstrap/dist/css/bootstrap.css';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Header = ({ title, username }) => {
     return (
@@ -22,7 +22,7 @@ const Header = ({ title, username }) => {
 
 Header.defaultProps = {
     title: 'StudyMates',
-    user: 'User'
+    username: 'User'
 }
 
 Header.propTypes = {

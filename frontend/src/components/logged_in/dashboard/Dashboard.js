@@ -3,7 +3,8 @@ import Header from "./Header";
 import Footer from "./Footer"
 import './Dashboard.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Breadcrumb, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import PropTypes from 'prop-types';
 
 const Dashboard = ({ username }) => {
   return (
@@ -38,6 +39,10 @@ const Dashboard = ({ username }) => {
   );
 };
 
+Dashboard.defaultProps = {
+  title: 'StudyMates',
+  username: 'User'
+}
 const welcomeStyle = {
       color: 'white',
       backgroundColor: 'navy',
