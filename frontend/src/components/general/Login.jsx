@@ -37,7 +37,7 @@ const Login = () => {
                 />
               </div>
               <button type="submit" className="btn btn-primary border-0" 
-                style={{backgroundcolor: "#00243D"}, {color:"#FFD485"}}>
+                style={{backgroundcolor: "#00243D", color:"#FFD485"}}>
                 Submit
               </button>
             </form>
@@ -51,28 +51,6 @@ const Login = () => {
         </Col>
         <Col className="login-content"></Col>
       </Row>
-
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              className="form-control"
-              id="exampleInputPassword1"
-              placeholder="Password"
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
-        <p className="mt-4">
-          New User? <Link to="/register">Register</Link>
-        </p>
-        <p>
-          Forgot Password? <Link to="#">Reset</Link>
-        </p>
-      </div>
     </div>
   );
 };

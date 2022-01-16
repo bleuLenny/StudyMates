@@ -7,21 +7,32 @@ import { Card, CardGroup } from "react-bootstrap";
 import { useEffect } from "react";
 import axios from "axios";
 
-const Dashboard = (username) => {
-  return (
-    <div>
-      <Header username={username} />
-      <Card className="mt-5 p-3 Dashboard-Welcome">
-        <Card.Body>
-          <Card.Title>
-            <h1>Welcome {username}!</h1>
-          </Card.Title>
-          <CardGroup>
-            <Card style={statsStyle}>
-              <Card.Body>
-                <Card.Title>{username}'s Stats</Card.Title>
-                <Card.Text>
+const Dashboard = () => {
+  const [auth, setAuth] = useState(false);
+  const [username, setUsername] = useState("");
+  useEffect(() => {
+    axios.get("/api/").then((val) => {
+      setUsername(val.data[1].username);
+      if (val.data[0].passport.user !== undefined) {
+        setAuth(true);
+      }
+    });
+  });
 
+  if (auth) {
+    return (
+      <div>
+        <Header username={username} />
+        <Card className="mt-5 p-3 Dashboard-Welcome">
+          <Card.Body>
+            <Card.Title>
+              <h1>Welcome {username}!</h1>
+            </Card.Title>
+            <CardGroup>
+              <Card style={statsStyle}>
+                <Card.Body>
+                  <Card.Title>{username}'s Stats</Card.Title>
+                  <Card.Text />
                   <p>Student ID: </p>
                   <p>Program: </p>
                   <p>Study Groups Owned: </p>
