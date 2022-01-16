@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const process = require("process");
 const dotenv = require("dotenv");
 const Courses = require("../models/courses");
+const User = require("../models/users");
 dotenv.config();
 
 mongoose.connect(
@@ -36,9 +37,15 @@ let apiController = {
       // if(!doc)console.log(doc)
     });
   },
-  auth:(req,res)=>{
-    console.log(req.session)
-    res.send([req.session,req.user])
+  info: (req, res) => {
+    User.find({ email: req.params.email }, async (err, doc) => {
+      if (err) throw err;
+      if (doc) res.send(doc);
+    });
+  },
+  auth: (req, res) => {
+    // console.log(req.session);
+    res.send([req.session, req.user]);
   },
   filter: (req, res) => {
     Courses.find({ course_id: req.body.course_id }, async (err, doc) => {

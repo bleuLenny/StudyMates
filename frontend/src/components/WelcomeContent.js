@@ -53,6 +53,14 @@ const WelcomeContent = () => {
                       placeholder="8 characters long"
                     ></Form.Control>
                   </Form.Group>
+                  <Form.Group controlId="major">
+                    <Form.Label>Major</Form.Label>
+                    <Form.Control
+                      type="major"
+                      name='major'
+                      placeholder="Type in your major"
+                    ></Form.Control>
+                  </Form.Group>
                 </Col>
               </Row>
               <br></br>

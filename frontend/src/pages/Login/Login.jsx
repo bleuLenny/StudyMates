@@ -7,6 +7,7 @@ import axios from "axios";
 const Login = () => {
   const [auth, setAuth] = useState(false);
   const [username, setUsername] = useState("");
+  
   useEffect(() => {
     axios.get("/api/auth").then((val) => {
       setUsername(val.data[1].username);
@@ -14,7 +15,8 @@ const Login = () => {
         setAuth(true);
       }
     });
-  });
+  }, []);
+
 
   if (!auth) {
     return (

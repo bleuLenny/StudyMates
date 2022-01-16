@@ -34,6 +34,7 @@ passport.deserializeUser((id, cb) => {
     const full_name = `${user.first_name} ${user.last_name}`
     const userInformation = {
       username: full_name,
+      email:user.email
     };
     cb(err, userInformation);
   });

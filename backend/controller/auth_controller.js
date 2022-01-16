@@ -49,6 +49,7 @@ let authController = {
           first_name: req.body.first_name,
           last_name: req.body.last_name,
           password: hashedPassword,
+          major: req.body.major,
         });
         await newUser.save();
         // res.send("User Created");

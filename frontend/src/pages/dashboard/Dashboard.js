@@ -11,12 +11,26 @@ import { Link } from "react-router-dom";
 const Dashboard = () => {
   const [auth, setAuth] = useState(false);
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [major, setMajor] = useState("");
+  const [id, setId] = useState("");
+
   useEffect(() => {
     axios.get("/api/auth").then((val) => {
+      // console.log(val);
       setUsername(val.data[1].username);
       if (val.data[0].passport.user !== undefined) {
         setAuth(true);
+        setEmail(val.data[1].email);
       }
+    });
+  }, []);
+
+  useEffect(() => {
+    axios.get(`/api/info/${email}`).then((val) => {
+      // console.log(val.data)
+      setMajor(val.data[0].major);
+      setId(val.data[0]._id);
     });
   });
 
@@ -34,8 +48,8 @@ const Dashboard = () => {
                 <Card.Body>
                   <Card.Title>{username}'s Stats</Card.Title>
                   <Card.Text />
-                  <p>Student ID: </p>
-                  <p>Program: </p>
+                  <p>Student ID: {id} </p>
+                  <p>Program: {major} </p>
                   <p>Study Groups Owned: </p>
                   <p>Study Groups Joined: </p>
                   <p>Current Tags: </p>
