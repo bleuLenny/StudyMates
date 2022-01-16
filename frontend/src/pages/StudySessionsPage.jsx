@@ -6,7 +6,7 @@ import StudySessions from "../components/logged_in/studysessions/StudySessions";
 export const StudySessionsPage = () => {
   return (
     <div>
-      <StudySessions/>
+      <StudySessions />
 
     </div>
   );
