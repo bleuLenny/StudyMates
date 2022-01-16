@@ -9,7 +9,7 @@ const Dashboard = ({ username }) => {
   return (
     <div>
       <Header username={username} />
-      <Card className="mt-5 p-3" style={welcomeStyle}>
+      <Card className="mt-5 p-3 Dashboard-Welcome">
         <Card.Body>
           <Card.Title>Welcome {username}!</Card.Title>
           <CardGroup>
@@ -35,10 +35,6 @@ const Dashboard = ({ username }) => {
 Dashboard.defaultProps = {
   title: "StudyMates",
   username: "User",
-};
-const welcomeStyle = {
-  color: "white",
-  backgroundColor: "0, 36, 61",
 };
 const statsStyle = {
   color: "black",
