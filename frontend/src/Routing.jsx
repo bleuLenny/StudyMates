@@ -7,6 +7,7 @@ import StudySessions from "./pages/StudySessions/StudySessionsPage";
 import PersonalGroups from "./pages/dashboard/PersonalGroups";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Search from "./pages/dashboard/Search";
+import Carousel from "./components/Carousel/Carousel";
 
 const Routing = () => {
   return (
@@ -22,6 +23,8 @@ const Routing = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/mygroups" element={<PersonalGroups />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/carousel" element={<Carousel />} />
+
           </Routes>
         </div>
       </Router>
