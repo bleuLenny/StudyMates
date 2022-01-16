@@ -7,6 +7,7 @@ Gold #FFD485 */
 .Dashboard {
   text-align: center;
   background-color: #f5f5f5;
+  margin: 0;
 }
 .Dashboard-Welcome {
   background-color: #00243D;
