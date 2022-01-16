@@ -1,11 +1,20 @@
 import React from 'react'
 import './StudySessions.css'
-import Carousel from './Carousel.js'
+import Carousel from './Carousel'
+import Header from '../dashboard/Header'
+import Footer from '../dashboard/Footer'
 
 const StudySessions = () => {
   return (
     <div>
-      <Carousel />
+      <Header />
+      <div className='StudySessions'>
+        
+        <Carousel />
+        abcefg
+        
+      </div>
+      <Footer/>
     </div>
   )
 };

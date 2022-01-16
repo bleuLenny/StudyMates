@@ -1,10 +1,9 @@
 .carousel {
-    width: 60%;
-    height: 70%;
-    background-color: "black";
+    width: 70%;
+    height: 700px;
+    background-color: black;
 }
 .carousel-inner {
     height: 100%;
     width: 100%;
-
 }
