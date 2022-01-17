@@ -11,7 +11,7 @@
 <h4>You will have to install the dependencies in both the frontend folder and backend folder.</h4>
 <ol>
   <li>cd into the frontend folder</li>
-  <li>Enter npm install<li>
+  <li>Enter npm install</li>
   <li>cd into the backend folder</li>
   <li>Enter npm install</li>
   </ol>
