@@ -20,7 +20,7 @@
 <h4>You will have to run start the frontend and backend.</h4>
 <ol>
   <li>cd into the frontend folder</li>
-  <li>npm start<li>
+  <li>npm start</li>
   <li>cd into the backend folder</li>
   <li>npm start</li>
   </ol>
