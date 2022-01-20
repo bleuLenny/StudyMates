@@ -1,5 +1,5 @@
 ﻿# Study Mates
- 
+ <h4>A project for nwHacks' 2022 hackathon</h4>
  <h2>Introduction</h2>
 <p>StudyMate is a MERN stack website application designed to group users into group study sessions based on filters.</p>
 <h2>Getting started</h2>
